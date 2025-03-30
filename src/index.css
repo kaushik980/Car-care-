@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+
+/* Keyframe animation for background transition */
+@keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Applying the animation to the main panel */
+  .animate-background {
+    background-size: 200% 200%;
+    animation: backgroundAnimation 10s ease infinite;
+  }
+  
